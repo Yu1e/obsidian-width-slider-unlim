@@ -12,7 +12,7 @@ The formula, in the two CSS variables the plugin sets:
 calc(700px + <slider> * (100vw - 700px) / 100)
 ```
 
-The plugin id is unchanged (`editor-width-slider`), so this build replaces the original in place and keeps the saved slider position.
+The plugin id is `yule-width-slider-unlim` (the original is `editor-width-slider`). Both plugins use the same slider and style element, so keep only one of them enabled. Settings are stored per plugin folder: to keep the saved slider position, copy `data.json` from the original plugin folder.
 
 ## Requirements
 
@@ -21,8 +21,8 @@ Obsidian applies `--line-width` and `--file-line-width` only when "Readable line
 ## Installation
 
 1. Download `main.js` and `manifest.json` from this repository.
-2. Put them in `<vault>/.obsidian/plugins/editor-width-slider/`, replacing the original files.
-3. Restart Obsidian and enable the plugin in Settings → Community plugins.
+2. Put them in `<vault>/.obsidian/plugins/yule-width-slider-unlim/`.
+3. Disable the original Editor Width Slider if it is installed, restart Obsidian and enable this plugin in Settings → Community plugins.
 
 ## Usage
 
