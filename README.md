@@ -1,6 +1,16 @@
 # Obsidian Line Width Slider Plugin
 > A plugin for Obsidian that allows you to adjust the editor line width using a simple slider in the status bar.
 
+## About this fork
+
+Fork of [MugishoMp/obsidian-editor-width-slider](https://github.com/MugishoMp/obsidian-editor-width-slider) (MIT).
+
+Change: the slider range now runs from 700px (slider at 0) to the full window width (slider at 100). In the original the range was 700px to 1700px, so on wide screens the margins never went away.
+
+The plugin only sets `--line-width` and `--file-line-width`, which Obsidian applies when "Readable line length" is on (Settings → Editor). Keep that option enabled.
+
+The plugin id is unchanged (`editor-width-slider`), so this build can replace the original in `.obsidian/plugins/editor-width-slider/` and keeps the saved slider position.
+
 ## Features
 
 - Adjust the line width of the editor using a slider in the status bar.
